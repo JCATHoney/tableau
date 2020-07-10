@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10500.17.1226.1925                               -->
+<mapsource inline='true' source-platform='win' version='10.5' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <connection api-key='pk.eyJ1IjoidGFibGVhdS1pbnRlcm5hbCIsImEiOiJjaWdtdGJjOXYwMDQ1NnBtM20zcTF2OGUzIn0.lAOHdE3WGiLh_n2a4uXGVA' class='MapBox' description='Mapbox Basic' full-url='https://api.mapbox.com/v4/{L}/{Z}/{X}/{Y}{D}.png256?access_token=pk.eyJ1IjoidGFibGVhdS1pbnRlcm5hbCIsImEiOiJjaWdtdGJjOXYwMDQ1NnBtM20zcTF2OGUzIn0.lAOHdE3WGiLh_n2a4uXGVA' inline='true' layer-separator=',' offline='' port='443' server='api.mapbox.com' service='https' tileset='US\normal' url-format='/v4/{L}/{Z}/{X}/{Y}{D}.png256?access_token=pk.eyJ1IjoidGFibGVhdS1pbnRlcm5hbCIsImEiOiJjaWdtdGJjOXYwMDQ1NnBtM20zcTF2OGUzIn0.lAOHdE3WGiLh_n2a4uXGVA' username='' wait-tile-color='#dddddd' />
+  <languages />
+  <layers>
+    <layer display-name='Streets Classic' name='mapbox.streets-basic' show-ui='true' type='features' />
+  </layers>
+  <properties />
+  <map-styles>
+    <map-style display-name='M Basic' name='M Basic' wait-tile-color='#dddddd'>
+      <map-layer-style name='Streets Classic' request-string='mapbox.streets-basic' />
+    </map-style>
+  </map-styles>
+  <mapsource-defaults version='10.5'>
+    <style>
+      <style-rule element='map-layer'>
+        <format attr='enabled' id='mapbox.streets-basic' value='true' />
+      </style-rule>
+      <style-rule element='map'>
+        <format attr='washout' value='0' />
+      </style-rule>
+    </style>
+  </mapsource-defaults>
+  <map-attribution copyright-string='About Maps' copyright-url='http://www.tableau.com/mapdata' short-copyright-string='' />
+</mapsource>

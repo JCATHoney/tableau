@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10500.17.1226.1925                               -->
+<mapsource inline='true' source-platform='win' version='10.5' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <connection class='OGC-WMS' description='http://www.gebco.net/data_and_products/gebco_web_services/web_map_service/mapserv?' full-url='http://www.gebco.net/data_and_products/gebco_web_services/web_map_service/mapserv?' inline='true' offline='' port='80' server='www.gebco.net' service='http' tileset='US\normal' url='/data_and_products/gebco_web_services/web_map_service/mapserv?' use-tiled-maps='true' />
+  <languages />
+  <properties />
+  <map-styles />
+  <mapsource-defaults version='10.5'>
+    <style>
+      <style-rule element='map-layer'>
+        <format attr='enabled' id='GEBCO_Grid' value='true' />
+      </style-rule>
+    </style>
+  </mapsource-defaults>
+</mapsource>

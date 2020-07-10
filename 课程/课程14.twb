@@ -1,0 +1,538 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20182.18.0925.2120                               -->
+<workbook original-version='18.1' source-build='2018.2.2 (20182.18.0925.2120)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SortTagCleanup />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='示例数据 (人工坐席接听数据)' inline='true' name='federated.12i1y3y113m05a184g5ve1a4a31a' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='人工坐席接听数据' name='excel-direct.00zty2x15gp6sh173q4d308qorjh'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='F:/百度网盘文件/tableau配套数据/人工坐席接听数据.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.00zty2x15gp6sh173q4d308qorjh' name='示例数据' table='[示例数据$]' type='table'>
+          <columns gridOrigin='A1:O10001:no:A1:O10001:0' header='yes' outcome='2'>
+            <column datatype='string' name='中心' ordinal='0' />
+            <column datatype='string' name='部' ordinal='1' />
+            <column datatype='string' name='组' ordinal='2' />
+            <column datatype='string' name='班' ordinal='3' />
+            <column datatype='date' name='日期' ordinal='4' />
+            <column datatype='string' name='姓名' ordinal='5' />
+            <column datatype='string' name='工号' ordinal='6' />
+            <column datatype='integer' name='人工服务接听量' ordinal='7' />
+            <column datatype='integer' name='三声铃响接听量' ordinal='8' />
+            <column datatype='integer' name='呼入通话时长(秒)' ordinal='9' />
+            <column datatype='real' name='平均呼入通话时长(秒)' ordinal='10' />
+            <column datatype='integer' name='呼入案头总时长(秒)' ordinal='11' />
+            <column datatype='real' name='平均呼入案头时长（秒）' ordinal='12' />
+            <column datatype='integer' name='服务评价推送成功数' ordinal='13' />
+            <column datatype='real' name='服务评价满意率' ordinal='14' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>中心</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[中心]</local-name>
+            <parent-name>[示例数据]</parent-name>
+            <remote-alias>中心</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RCN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>部</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[部]</local-name>
+            <parent-name>[示例数据]</parent-name>
+            <remote-alias>部</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RCN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>组</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[组]</local-name>
+            <parent-name>[示例数据]</parent-name>
+            <remote-alias>组</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RCN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>班</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[班]</local-name>
+            <parent-name>[示例数据]</parent-name>
+            <remote-alias>班</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RCN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>日期</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[日期]</local-name>
+            <parent-name>[示例数据]</parent-name>
+            <remote-alias>日期</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>姓名</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[姓名]</local-name>
+            <parent-name>[示例数据]</parent-name>
+            <remote-alias>姓名</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RCN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>工号</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[工号]</local-name>
+            <parent-name>[示例数据]</parent-name>
+            <remote-alias>工号</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RCN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>人工服务接听量</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[人工服务接听量]</local-name>
+            <parent-name>[示例数据]</parent-name>
+            <remote-alias>人工服务接听量</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>三声铃响接听量</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[三声铃响接听量]</local-name>
+            <parent-name>[示例数据]</parent-name>
+            <remote-alias>三声铃响接听量</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>呼入通话时长(秒)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[呼入通话时长(秒)]</local-name>
+            <parent-name>[示例数据]</parent-name>
+            <remote-alias>呼入通话时长(秒)</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>平均呼入通话时长(秒)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[平均呼入通话时长(秒)]</local-name>
+            <parent-name>[示例数据]</parent-name>
+            <remote-alias>平均呼入通话时长(秒)</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>呼入案头总时长(秒)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[呼入案头总时长(秒)]</local-name>
+            <parent-name>[示例数据]</parent-name>
+            <remote-alias>呼入案头总时长(秒)</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>平均呼入案头时长（秒）</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[平均呼入案头时长（秒）]</local-name>
+            <parent-name>[示例数据]</parent-name>
+            <remote-alias>平均呼入案头时长（秒）</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>服务评价推送成功数</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[服务评价推送成功数]</local-name>
+            <parent-name>[示例数据]</parent-name>
+            <remote-alias>服务评价推送成功数</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>服务评价满意率</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[服务评价满意率]</local-name>
+            <parent-name>[示例数据]</parent-name>
+            <remote-alias>服务评价满意率</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[示例数据]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:O10001:no:A1:O10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.482912' measure-ordering='alphabetic' measure-percentage='0.517088' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;China&quot;' />
+      </semantic-values>
+      <default-sorts>
+        <manual-sort column='[none:Forecast Indicator:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;实际&quot;</bucket>
+            <bucket>&quot;估计&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='工作表 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='示例数据 (人工坐席接听数据)' name='federated.12i1y3y113m05a184g5ve1a4a31a' />
+          </datasources>
+          <datasource-dependencies datasource='federated.12i1y3y113m05a184g5ve1a4a31a'>
+            <column-instance column='[人工服务接听量]' derivation='Sum' forecast-column-base='[sum:人工服务接听量:qk]' forecast-column-type='forecast-value' name='[fVal:sum:人工服务接听量:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+            <column-instance column='[人工服务接听量]' derivation='Sum' name='[sum:人工服务接听量:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[日期]' derivation='Day-Trunc' name='[tdy:日期:qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' name='[人工服务接听量]' role='measure' type='quantitative' />
+            <column datatype='date' name='[日期]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.12i1y3y113m05a184g5ve1a4a31a].[none:Forecast Indicator:nk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='log' />
+          </pane>
+        </panes>
+        <rows>[federated.12i1y3y113m05a184g5ve1a4a31a].[fVal:sum:人工服务接听量:qk]</rows>
+        <cols>[federated.12i1y3y113m05a184g5ve1a4a31a].[tdy:日期:qk]</cols>
+        <forecast-specification auto-forecast-agg='true' band-confidence-level='95.000000' enabled='true' fill-type='fill-missing' ignore-last='1' model-type='custom' range-type='auto' season-type='ets-none' show-prediction-bands='true' trend-type='ets-none' />
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.23958' source-height='35'>
+    <window class='worksheet' maximized='true' name='工作表 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='159'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='159'>
+            <card pane-specification-id='0' param='[federated.12i1y3y113m05a184g5ve1a4a31a].[none:Forecast Indicator:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <selection-collection>
+          <tuple-selection>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.12i1y3y113m05a184g5ve1a4a31a].[tdy:日期:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.12i1y3y113m05a184g5ve1a4a31a].[fVal:sum:人工服务接听量:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.12i1y3y113m05a184g5ve1a4a31a].[tdy:日期:qk]</field>
+                  <field>[federated.12i1y3y113m05a184g5ve1a4a31a].[fPIL:sum:人工服务接听量:qk]</field>
+                  <field>[federated.12i1y3y113m05a184g5ve1a4a31a].[fPIU:sum:人工服务接听量:qk]</field>
+                  <field>[federated.12i1y3y113m05a184g5ve1a4a31a].[fVal:sum:人工服务接听量:qk]</field>
+                  <field>[federated.12i1y3y113m05a184g5ve1a4a31a].[none:Forecast Indicator:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>#2014-02-02 00:00:00#</value>
+                <value>17593</value>
+                <value>38043</value>
+                <value>27818</value>
+                <value>&quot;估计&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </tuple-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.12i1y3y113m05a184g5ve1a4a31a].[:Measure Names]</field>
+            <field>[federated.12i1y3y113m05a184g5ve1a4a31a].[yr:日期:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='工作表 1' width='192'>
+      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
+      AElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
